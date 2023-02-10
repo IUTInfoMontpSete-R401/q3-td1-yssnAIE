@@ -30,4 +30,9 @@ public class Fermee extends State{
     public void read() {
         System.out.println("Vous ne pouvez pas faire cette action");
     }
+
+    @Override
+    public void reset() {
+        socket.changeState(new Initiale(socket));
+    }
 }

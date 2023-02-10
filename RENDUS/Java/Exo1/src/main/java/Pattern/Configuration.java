@@ -1,14 +1,15 @@
 package Pattern;
 
-public class Ecoute extends State{
+public class Configuration extends State{
 
-    public Ecoute(Socket socket) {
+    public Configuration(Socket socket) {
         super(socket);
     }
 
     @Override
     public void connect() {
-        System.out.println("Vous ne pouvez pas faire cette action");
+        read();
+        socket.changeState(new Connectee(socket));
     }
 
     @Override
@@ -18,19 +19,17 @@ public class Ecoute extends State{
 
     @Override
     public void close() {
-        socket.changeState(new Fermee(socket));
+        System.out.println("Vous ne pouvez pas faire cette action");
     }
 
     @Override
     public void accept() {
-        socket.changeState(new Configuration(socket));
-        State s = new Configuration(socket);
-        s.connect();
+        System.out.println("Vous ne pouvez pas faire cette action");
     }
 
     @Override
     public void read() {
-        System.out.println("Vous ne pouvez pas faire cette action");
+        System.out.println("un message dans la console");
     }
 
     @Override

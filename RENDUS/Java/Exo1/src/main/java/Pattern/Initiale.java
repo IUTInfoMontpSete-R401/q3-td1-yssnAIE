@@ -29,4 +29,9 @@ public class Initiale extends State{
     public void read() {
         System.out.println("Vous ne pouvez pas faire cette action");
     }
+
+    @Override
+    public void reset() {
+        System.out.println("Vous ne pouvez pas faire cette action");
+    }
 }
