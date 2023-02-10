@@ -1,3 +1,5 @@
+package Antipattern;
+
 public class Socket{
 
     private String state;
