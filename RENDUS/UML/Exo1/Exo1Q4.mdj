@@ -153,7 +153,7 @@
 											"top": 192,
 											"width": 133.33251953125,
 											"height": 13,
-											"text": "+changeState(s: State)",
+											"text": "+changeState(s: State.State)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -258,7 +258,7 @@
 											"top": 156,
 											"width": 136.9443359375,
 											"height": 13,
-											"text": "State"
+											"text": "State.State"
 										},
 										{
 											"_type": "LabelView",
@@ -790,7 +790,7 @@
 											"top": 335,
 											"width": 76.24169921875,
 											"height": 13,
-											"text": "Initiale"
+											"text": "State.Initiale"
 										},
 										{
 											"_type": "LabelView",
@@ -1053,7 +1053,7 @@
 											"top": 423,
 											"width": 76.24169921875,
 											"height": 13,
-											"text": "Connectee"
+											"text": "State.Connectee"
 										},
 										{
 											"_type": "LabelView",
@@ -1316,7 +1316,7 @@
 											"top": 351,
 											"width": 76.24169921875,
 											"height": 13,
-											"text": "Fermee"
+											"text": "State.Fermee"
 										},
 										{
 											"_type": "LabelView",
@@ -1579,7 +1579,7 @@
 											"top": 423,
 											"width": 76.24169921875,
 											"height": 13,
-											"text": "Ecoute"
+											"text": "State.Ecoute"
 										},
 										{
 											"_type": "LabelView",
@@ -2231,7 +2231,7 @@
 										"$ref": "AAAAAAGGO9c5T+LwOjk="
 									},
 									"name": "s",
-									"type": "State"
+									"type": "State.State"
 								}
 							]
 						}
@@ -2243,7 +2243,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "State",
+					"name": "State.State",
 					"stereotype": "abstract",
 					"operations": [
 						{
@@ -2299,7 +2299,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Initiale",
+					"name": "State.Initiale",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -2364,7 +2364,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Connectee",
+					"name": "State.Connectee",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -2429,7 +2429,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Fermee",
+					"name": "State.Fermee",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -2507,7 +2507,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Ecoute",
+					"name": "State.Ecoute",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
